@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.Group" parent="@android:style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">-1dp</item> <!-- Ensures we don't get a 2 dp top stroke -->
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+
+    <style name="EditTextEmail" parent="Widget.Group">
+        <item name="android:layout_marginTop">50dp</item>"
+        <item name="android:hint">@string/email_edit_Text_hint</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/edittext_shape</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:textCursorDrawable">@drawable/edittext_cursor_shape</item>
+        <item name="android:textSize">@dimen/sp_fifteen</item>
+    </style>
+
+    <style name="EditTextPassword" parent="Widget.Group">
+        <item name="android:hint">@string/password_edit_Text_hint</item>
+        <item name="android:background">@drawable/edittext_shape</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textCursorDrawable">@drawable/edittext_cursor_shape</item>
+        <item name="android:textSize">@dimen/sp_fifteen</item>
+    </style>
+
+    <style name="ButtonSignIn" parent="Widget.Group">
+        <item name="android:layout_marginTop">10dp</item>"
+        <item name="android:text">@string/sign_in_button_text</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:textSize">@dimen/sp_twenty</item>
+    </style>
+
+    <style name="ButtonSignUp" parent="Widget.Group">
+        <item name="android:layout_width">@dimen/dp_hundred_twenty_five</item>
+        <item name="android:layout_marginTop">10dp</item>"
+        <item name="android:text">@string/sign_up_button_text</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/sp_seventeen</item>
+    </style>
+
+    <style name="AccountHelp" parent="Widget.Group">
+        <item name="android:text">@string/no_account_info_text</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_marginTop">20dp</item>"
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/sp_seventeen</item>
+    </style>
+
+    <style name="ButtonLaunchBK" parent="Widget.Group">
+        <item name="android:text">@string/launch_bk_activity</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/sp_twenty</item>
+    </style>
+
+    <style name="ButtonLaunchDB" parent="Widget.Group">
+        <item name="android:text">@string/launch_db_activity</item>
+        <item name="android:background">@drawable/button_shape</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/sp_twenty</item>
+    </style>
+
+</resources>

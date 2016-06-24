@@ -1,0 +1,37 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.binding.models.SignInViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBackground">
+        <EditText
+            style="@style/EditTextEmail"
+            android:addTextChangedListener="@{viewModel.getEmailTextWatcher}" />
+
+        <EditText
+            style="@style/EditTextPassword"
+            android:addTextChangedListener="@{viewModel.getPasswordTextWatcher}" />
+
+        <Button
+            style="@style/ButtonSignIn"
+            android:alpha="@{viewModel.signInModel.isInputDataValid ? 1.0f : 0.5f}"
+            android:enabled="@{viewModel.signInModel.isInputDataValid}"
+            android:onClick="@{viewModel.onSignInClick}"/>
+
+        <TextView
+            style="@style/AccountHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/ButtonSignUp"
+            android:onClick="@{viewModel.onSignUpClick}"/>
+
+    </LinearLayout>
+</layout>

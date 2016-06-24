@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient android:endColor="@android:color/transparent" android:startColor="@android:color/white" />
+    <solid android:color="@color/trans_white_less"/>
+    <corners android:radius="@dimen/dp_two" />
+    <padding
+        android:bottom="@dimen/dp_ten"
+        android:left="@dimen/dp_ten"
+        android:right="@dimen/dp_ten"
+        android:top="@dimen/dp_ten" />
+</shape>
